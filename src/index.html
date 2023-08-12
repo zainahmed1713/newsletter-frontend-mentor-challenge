@@ -12,12 +12,13 @@
     <main
         class="container flex flex-col-reverse lg:flex-row lg:justify-center lg:items-center lg:h-screen lg:max-w-full">
         <section class="left p-4 lg:mr-10">
-            <h2 class="text-4xl font-bold mt-3 md:text-5xl">Stay updated!</h2>
-            <p class="text-xs my-5 md:text-xl lg:w-96 lg:my-6 lg:font-semibold">Join 60,000+ product managers receiving
+            <h2 class="text-4xl font-bold mt-3 text-charcoal d:text-5xl">Stay updated!</h2>
+            <p class="text-xs my-5
+            text-charcoal md:text-xl lg:w-96 lg:my-6 lg:font-semibold">Join 60,000+ product managers receiving
                 monthly updates
                 on:
             </p>
-            <div class="feature-container h-28 mb-3 lg:mb-10">
+            <div class="feature-container h-28 mb-3 lg:mb-10 text-charcoal">
                 <div class="feature flex items-center mb-3">
                     <img src="../assets/images/icon-list.svg" class="mr-3 md:w-7 lg:w-6" alt="List Icon">
                     <p class="text-xs md:text-xl
@@ -33,13 +34,14 @@
                 </div>
             </div>
             <div class="input mb-6">
-                <label for="email" class="text-xs font-semibold md:text-lg">Email address</label>
+                <label for="email" class="text-xs
+                text-charcoal font-semibold md:text-lg">Email address</label>
                 <input type="email" class="w-full p-2 border-2 rounded-lg md:p-3" id="email"
                     placeholder="email@company.com" required>
             </div>
             <div class="submit flex justify-center">
                 <button
-                    class="w-full bg-blue-950 text-white text-xs font-semibold p-3 rounded-lg md:text-xl md:w-1/2 lg:w-full lg:text-lg">Subscribe
+                    class="w-full bg-charcoal text-white text-xs font-semibold p-3 rounded-lg hover:bg-tomato d:text-xl md:w-1/2 lg:w-full lg:text-lg">Subscribe
                     to
                     monthly
                     newsletter</button>
@@ -49,7 +51,29 @@
             <img src="../assets/images/illustration-sign-up-mobile.svg" class="w-full lg:hidden" alt="Image">
             <img src="../assets/images/illustration-sign-up-desktop.svg" class="hidden lg:block" alt="">
         </section>
+        <section class="hidden success p-6 flex flex-col justify-around items-center h-screen">
+            <div>
+                <img src="../assets/images/icon-success.svg" alt="Success Icon"
+                    class="w-14 my-8 md:w-28 md:my-12 lg:w-16">
+                <h2 class="text-4xl font-bold my-5 text-charcoal md:text-6xl md:my-10 lg:text-5xl lg:w-96 lg:my-5">
+                    Thanks for
+                    subscribing!
+                </h2>
+                <p class="text-sm my-6 text-charcoal md:text-3xl lg:w-96 lg:text-xl lg:my-3">
+                    A confirmation email has been sent to <span class="email font-bold">ash@loremcompany.com</span>.
+                    Please open
+                    it
+                    and click the button inside to confirm your subscription
+                </p>
+            </div>
+            <div class="dismiss flex justify-center w-full">
+                <button
+                    class="w-full bg-charcoal text-white text-sm font-semibold p-5 rounded-lg  hover:bg-tomato md:text-xl lg:w-full lg:text-lg">Dismiss
+                    message</button>
+            </div>
+        </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
